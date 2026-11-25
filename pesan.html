@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pesan Sekarang - Kedai Kopi Senja</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Kedai Kopi Senja</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="menu.html">Daftar Menu</a></li>
+        <li><a href="pesan.html">Pesan Sekarang</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Form Pemesanan</h2>
+    <form class="order-form" method="get" action="pesan.html">
+      <p>
+        <label for="nama">Nama Pemesan:</label><br>
+        <input type="text" id="nama" name="nama" required>
+      </p>
+
+      <p>
+        <label for="wa">Nomor WhatsApp:</label><br>
+        <input type="tel" id="wa" name="wa" required>
+      </p>
+
+      <p>
+        <label for="menu">Pilihan Menu:</label><br>
+        <select id="menu" name="menu">
+          <option value="kopi-susu-gula-aren">Kopi Susu Gula Aren - Rp18.000</option>
+          <option value="americano">Americano - Rp15.000</option>
+          <option value="cappuccino">Cappuccino - Rp20.000</option>
+          <option value="v60-manual-brew">V60 Manual Brew - Rp22.000</option>
+          <option value="matcha-latte">Matcha Latte - Rp22.000</option>
+          <option value="cokelat-klasik">Cokelat Klasik - Rp20.000</option>
+          <option value="teh-leci-segar">Teh Leci Segar - Rp16.000</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="jumlah">Jumlah:</label><br>
+        <input type="number" id="jumlah" name="jumlah" min="1" max="10" value="1">
+      </p>
+
+      <p class="radio-group">
+        Cara Ambil:<br>
+        <input type="radio" id="ambil" name="cara" value="ambil-di-tempat">
+        <label for="ambil">Ambil di tempat</label><br>
+        <input type="radio" id="antar" name="cara" value="diantar">
+        <label for="antar">Diantar</label>
+      </p>
+
+      <p>
+        <label for="catatan">Catatan:</label><br>
+        <textarea id="catatan" name="catatan" rows="5" cols="45"></textarea>
+      </p>
+
+      <p>
+        <button type="submit">Kirim</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>Alamat: Jl. Tembalang Raya No. 45, Semarang</p>
+    <p>Jam Buka: Senin - Jumat (08.00 - 22.00 WIB) | Sabtu - Minggu (09.00 - 23.00 WIB)</p>
+  </footer>
+</body>
+</html>

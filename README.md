@@ -1,0 +1,9 @@
+# Kedai Kopi Senja - Tugas Minggu 2
+
+## Jawaban Pertanyaan
+
+### a. Apa yang muncul di address bar setelah form dikirim dan mengapa data form tampil di sana?
+Setelah form dikirim, address bar berubah menjadi seperti berikut: `pesan.html?nama=sun&wa=081575003570&menu=kopi-susu-gula-aren&jumlah=1&cara=ambil-di-tempat&catatan=less+sugar`. Di belakang nama halaman terdapat tanda tanya yang diikuti data yang telah diisi pada form. Data tersebut tampil di sana karena form menggunakan `method="get"`. Pada method GET, browser menyisipkan isi form ke dalam URL dalam bentuk pasangan nama dan nilai yang dipisahkan tanda `&`, dengan nama tiap pasangan diambil dari atribut `name` pada field. Hal ini sesuai dengan materi Minggu 1, yaitu GET digunakan untuk meminta data yang dibawa melalui URL, sehingga isinya dapat dilihat dan tersimpan di riwayat browser. Oleh karena itu, GET kurang cocok untuk data penting, sedangkan untuk pesanan yang sebenarnya, method POST lebih tepat digunakan. Selain itu, apabila Nama atau Nomor WhatsApp masih kosong, form tidak akan terkirim dan address bar tidak berubah, karena browser langsung menampilkan peringatan dari atribut `required`.
+
+### b. Pilih satu bagian halaman yang memakai element semantic! Mengapa memilih element itu dan bukan `<div>`?
+Bagian yang dipilih adalah menu navigasi di bagian atas halaman, yang dibuat menggunakan `<nav>`. Element ini dipilih karena namanya sudah menjelaskan fungsinya, yaitu sebagai kumpulan link untuk berpindah halaman, sehingga browser, mesin pencari, dan screen reader dapat mengenalinya sebagai menu utama. Selain itu, kode HTML menjadi lebih mudah dibaca karena fungsi bagian tersebut langsung terlihat. Apabila menggunakan `<div>`, tampilannya mungkin sama saja, tetapi `<div>` tidak memiliki arti tertentu, sehingga browser dan screen reader tidak mengetahui bahwa bagian tersebut adalah menu navigasi.
